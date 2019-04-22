@@ -132,7 +132,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a0J-8i-xxI">
-                                <rect key="frame" x="0.0" y="137" width="414" height="630.5"/>
+                                <rect key="frame" x="0.0" y="137" width="414" height="547.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cartCell" rowHeight="279" id="Iey-w8-bVf" customClass="HomeProductTableViewCell" customModule="MoltinBooksLibrary" customModuleProvider="target">
@@ -206,19 +206,32 @@
                                     <action selector="checkoutButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I1Q-xK-5f6"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NXs-Xg-zaj">
+                                <rect key="frame" x="69" y="694.5" width="276" height="75"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Delete Item from Cart"/>
+                                <connections>
+                                    <action selector="checkoutButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bA3-xe-wXj"/>
+                                    <action selector="deleteItemFromCart:" destination="XLm-6E-0wb" eventType="touchUpInside" id="QDq-Kq-4P1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="7gr-0k-IbS" firstAttribute="height" secondItem="diA-Y6-xN7" secondAttribute="height" multiplier="1:12" id="9E3-hM-3F2"/>
                             <constraint firstItem="8bG-eB-7BQ" firstAttribute="leading" secondItem="diA-Y6-xN7" secondAttribute="leading" constant="10" id="Dxk-v9-Hrp"/>
+                            <constraint firstItem="NXs-Xg-zaj" firstAttribute="top" secondItem="a0J-8i-xxI" secondAttribute="bottom" constant="10" id="EWU-xQ-tDb"/>
                             <constraint firstItem="5uy-f8-8oQ" firstAttribute="trailing" secondItem="8bG-eB-7BQ" secondAttribute="trailing" constant="10" id="FBu-Ty-42f"/>
                             <constraint firstItem="a0J-8i-xxI" firstAttribute="trailing" secondItem="5uy-f8-8oQ" secondAttribute="trailing" id="Hsl-L6-rht"/>
+                            <constraint firstItem="NXs-Xg-zaj" firstAttribute="height" secondItem="7gr-0k-IbS" secondAttribute="height" id="JZV-qm-1Uh"/>
                             <constraint firstItem="8bG-eB-7BQ" firstAttribute="top" secondItem="5uy-f8-8oQ" secondAttribute="top" constant="10" id="NiO-aG-CCe"/>
                             <constraint firstItem="7gr-0k-IbS" firstAttribute="centerX" secondItem="5uy-f8-8oQ" secondAttribute="centerX" id="YDI-IJ-XsL"/>
                             <constraint firstItem="a0J-8i-xxI" firstAttribute="leading" secondItem="5uy-f8-8oQ" secondAttribute="leading" id="ZS7-a3-IVL"/>
                             <constraint firstItem="5uy-f8-8oQ" firstAttribute="bottom" secondItem="7gr-0k-IbS" secondAttribute="bottom" constant="10" id="fdC-6K-eoE"/>
-                            <constraint firstItem="7gr-0k-IbS" firstAttribute="top" secondItem="a0J-8i-xxI" secondAttribute="bottom" constant="10" id="oYM-Kq-rv3"/>
+                            <constraint firstItem="NXs-Xg-zaj" firstAttribute="centerX" secondItem="7gr-0k-IbS" secondAttribute="centerX" id="mWX-wQ-2sa"/>
                             <constraint firstItem="7gr-0k-IbS" firstAttribute="width" secondItem="diA-Y6-xN7" secondAttribute="width" multiplier="1:1.5" id="p6a-99-1B7"/>
+                            <constraint firstItem="7gr-0k-IbS" firstAttribute="top" secondItem="NXs-Xg-zaj" secondAttribute="bottom" constant="8" id="qMs-Df-Qnu"/>
+                            <constraint firstItem="NXs-Xg-zaj" firstAttribute="width" secondItem="7gr-0k-IbS" secondAttribute="width" id="tUP-Bc-kTF"/>
                             <constraint firstItem="a0J-8i-xxI" firstAttribute="top" secondItem="8bG-eB-7BQ" secondAttribute="bottom" constant="10" id="vLH-9v-CWW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5uy-f8-8oQ"/>
