@@ -83,6 +83,23 @@ class HomeViewController: UIViewController,PmoltenHomeCallback,UITableViewDataSo
         
     }
     
+    @IBAction func checkoutButtonClicked(_ sender: Any) {
+        
+        
+        
+        self.performSegue(withIdentifier: "showCart", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showCart"{
+            let vc = segue.destination as! CartViewController
+            vc.homeModelArray = self.homeModelArray
+        }
+    }
+    
+    
+    
+    
 
     /*
     // MARK: - Navigation

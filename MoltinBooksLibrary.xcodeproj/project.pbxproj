@@ -21,6 +21,7 @@
 		9929FFB7226DB4EE000753D7 /* HomeViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9929FFB6226DB4EE000753D7 /* HomeViewPresenter.swift */; };
 		9929FFB9226DB78F000753D7 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9929FFB8226DB78F000753D7 /* HomeViewModel.swift */; };
 		9929FFBB226DC4FB000753D7 /* HomeProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9929FFBA226DC4FB000753D7 /* HomeProductTableViewCell.swift */; };
+		9929FFBD226DD703000753D7 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9929FFBC226DD702000753D7 /* CartViewController.swift */; };
 		EF2A8726006FFE6A6B9A6DEB /* Pods_MoltinBooksLibraryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F044BD6AE4A196BD551FD71 /* Pods_MoltinBooksLibraryUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,7 @@
 		9929FFB6226DB4EE000753D7 /* HomeViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewPresenter.swift; sourceTree = "<group>"; };
 		9929FFB8226DB78F000753D7 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		9929FFBA226DC4FB000753D7 /* HomeProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeProductTableViewCell.swift; path = View/HomeProductTableViewCell.swift; sourceTree = "<group>"; };
+		9929FFBC226DD702000753D7 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CartViewController.swift; path = View/CartViewController.swift; sourceTree = "<group>"; };
 		C62AAC369611026945D3F93C /* Pods-MoltinBooksLibraryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoltinBooksLibraryTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoltinBooksLibraryTests/Pods-MoltinBooksLibraryTests.release.xcconfig"; sourceTree = "<group>"; };
 		CD3F42AC2D1DE26321CC336C /* Pods-MoltinBooksLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoltinBooksLibrary.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoltinBooksLibrary/Pods-MoltinBooksLibrary.release.xcconfig"; sourceTree = "<group>"; };
 		E4596574DF4D909DF52F403C /* Pods_MoltinBooksLibraryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoltinBooksLibraryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -190,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				9929FFB2226DA067000753D7 /* HomeViewController.swift */,
+				9929FFBC226DD702000753D7 /* CartViewController.swift */,
 				9929FFBA226DC4FB000753D7 /* HomeProductTableViewCell.swift */,
 			);
 			name = View;
@@ -458,6 +461,7 @@
 				9929FFB9226DB78F000753D7 /* HomeViewModel.swift in Sources */,
 				9905476B226D9CBA00A84BC9 /* AppDelegate.swift in Sources */,
 				9929FFB5226DA183000753D7 /* MoltinCalls.swift in Sources */,
+				9929FFBD226DD703000753D7 /* CartViewController.swift in Sources */,
 				9929FFB3226DA067000753D7 /* HomeViewController.swift in Sources */,
 				9929FFBB226DC4FB000753D7 /* HomeProductTableViewCell.swift in Sources */,
 				9929FFB7226DB4EE000753D7 /* HomeViewPresenter.swift in Sources */,

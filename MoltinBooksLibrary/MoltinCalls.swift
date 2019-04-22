@@ -36,7 +36,7 @@ class MoltinCalls: NSObject {
     }
     
     //to get all product details
-    class func addItemInCart(success: @escaping (Any) -> (),failure: @escaping (Error) -> ()) {
+    class func addItemInCart(success: @escaping (String) -> (),failure: @escaping (Error) -> ()) {
         guard let moltinObj = moltin else {
             //throw an initilalizing error
             print("error")
@@ -46,8 +46,8 @@ class MoltinCalls: NSObject {
                                ofQuantity: 1,
                                toCart: "XXXX") { (result) in
             switch result {
-            case .success(let products):
-                success(result)
+            case .success:
+                success("Prduct added")
             case .failure(let error):
                 failure(error)
             }
