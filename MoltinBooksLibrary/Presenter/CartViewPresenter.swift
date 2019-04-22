@@ -27,7 +27,7 @@ class CartViewPresenter: NSObject {
     func getCartData() {
         MoltinCalls.getItemInCart( success: {(cartItemArray) in
             print(cartItemArray.count)
-            
+            self.cartModelArray.removeAll()
             for cartItem in cartItemArray {
                 let modelObj = CartDataModel(productValue: cartItem)
                 self.cartModelArray.append(modelObj)
@@ -40,5 +40,30 @@ class CartViewPresenter: NSObject {
             
         })
     }
+    
+    func deleteCart(cartModelArray:Array<CartDataModel>) {
+                
+        for productObj in cartModelArray {
+            if(productObj.isSelected == true) {
+                MoltinCalls.deleteItemInCart(id:productObj.id ?? "",success: {(cartItemArray) in
+                    print(cartItemArray.count)
+                    self.cartModelArray.removeAll()
+                    for cartItem in cartItemArray {
+                        let modelObj = CartDataModel(productValue: cartItem)
+                        self.cartModelArray.append(modelObj)
+                    }
+                    self.delegate?.success(productValue: self.cartModelArray)
+                    
+                }, failure: { error in
+                    //TODO:-need to handle if item gives an error while adding
+                    self.delegate?.showError(message: error.localizedDescription)
+                })
+            }
+            
+        }
+        
+    }
+    
+
 
 }

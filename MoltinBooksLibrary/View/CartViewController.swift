@@ -22,6 +22,7 @@ class CartViewController: UIViewController,PmoltenViewCartCallback,UITableViewDe
         self.getCartItems()
         self.cartTableView.dataSource = self
         self.cartTableView.delegate = self
+        self.cartTableView.tableFooterView = UIView()
     }
     
     func getCartItems() {
@@ -66,6 +67,7 @@ class CartViewController: UIViewController,PmoltenViewCartCallback,UITableViewDe
     
     //MARK:-implementation callback
     func success(productValue:Array<CartDataModel>) {
+        self.cartModelArray.removeAll()
         self.cartModelArray = productValue
         DispatchQueue.main.async {
             self.cartTableView.reloadData()
@@ -88,7 +90,7 @@ class CartViewController: UIViewController,PmoltenViewCartCallback,UITableViewDe
     */
     
     @IBAction func deleteItemFromCart(_ sender: Any) {
-        
+        self.cartViewPresenterObj?.deleteCart(cartModelArray: self.cartModelArray)
     }
     
 }

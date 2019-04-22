@@ -82,7 +82,7 @@ class MoltinCalls: NSObject {
             
             return
         }
-        moltinObj.cart.removeItem("", fromCart: "myCart", completionHandler: { (result) in
+        moltinObj.cart.removeItem(id, fromCart: "myCart", completionHandler: { (result) in
             
             switch result {
             case .success(let response):
