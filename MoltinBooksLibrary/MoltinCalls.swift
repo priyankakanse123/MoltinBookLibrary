@@ -42,9 +42,9 @@ class MoltinCalls: NSObject {
             print("error")
             return
         }
-        moltinObj.cart.addProduct(withID: "",
+        moltinObj.cart.addProduct(withID: id,
                                ofQuantity: 1,
-                               toCart: "XXXX") { (result) in
+                               toCart: "myCart") { (result) in
             switch result {
             case .success:
                 success("Prduct added")
@@ -55,18 +55,18 @@ class MoltinCalls: NSObject {
     }
 
     //view cart
-    class func getItemInCart(id:String,success: @escaping (String) -> (),failure: @escaping (Error) -> ()) {
+    class func getItemInCart(success: @escaping ([CartItem]) -> (),failure: @escaping (Error) -> ()) {
         guard let moltinObj = moltin else {
             //throw an initilalizing error
             print("error")
+            
             return
         }
-        moltinObj.cart.addProduct(withID: "",
-                                  ofQuantity: 1,
-                                  toCart: "XXXX") { (result) in
+        moltinObj.cart.items(forCartID: "myCart") { (result) in
+
                                     switch result {
-                                    case .success:
-                                        success("Prduct added")
+                                    case .success(let response):
+                                        success(response.data ?? [CartItem]())
                                     case .failure(let error):
                                         failure(error)
                                     }

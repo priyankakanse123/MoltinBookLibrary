@@ -88,12 +88,6 @@ class HomeViewController: UIViewController,PmoltenHomeCallback,UITableViewDataSo
         homePresenterObj?.addCartItems(homeModelArray: self.homeModelArray)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showCart"{
-            let vc = segue.destination as! CartViewController
-            vc.homeModelArray = self.homeModelArray
-        }
-    }
     
     
     
