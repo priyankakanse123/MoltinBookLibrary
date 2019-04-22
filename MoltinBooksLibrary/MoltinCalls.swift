@@ -72,6 +72,27 @@ class MoltinCalls: NSObject {
                                     }
         }
     }
+    
+    
+    //view cart
+    class func deleteItemInCart(id:String,success: @escaping ([CartItem]) -> (),failure: @escaping (Error) -> ()) {
+        guard let moltinObj = moltin else {
+            //throw an initilalizing error
+            print("error")
+            
+            return
+        }
+        moltinObj.cart.removeItem("", fromCart: "myCart", completionHandler: { (result) in
+            
+            switch result {
+            case .success(let response):
+                success(response ?? [CartItem]())
+            case .failure(let error):
+                failure(error)
+            }
+        })
+    }
+
 
     
 }

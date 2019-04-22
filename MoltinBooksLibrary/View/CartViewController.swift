@@ -86,4 +86,9 @@ class CartViewController: UIViewController,PmoltenViewCartCallback,UITableViewDe
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func deleteItemFromCart(_ sender: Any) {
+        
+    }
+    
 }
