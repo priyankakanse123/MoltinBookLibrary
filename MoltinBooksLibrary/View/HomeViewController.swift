@@ -8,7 +8,10 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController,PmoltenHomeCallback {
+    
+    var homePresenterObj: HomeViewPresenter?
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,10 +21,20 @@ class HomeViewController: UIViewController {
     }
     
     func getProductDetails() {
-        
-        MoltinCalls.authorizeMoltin()
-        MoltinCalls.getAllProductDetails()
+        self.homePresenterObj = HomeViewPresenter(pmoltenHomeCallback: self)
+        homePresenterObj?.getProductDetails()
     }
+    
+    
+    //MARK:callback implementation
+    func success(productValue:Codable) {
+        
+    }
+    func showError(message:String) {
+        //show localized error
+        print("error")
+    }
+
     
 
     /*

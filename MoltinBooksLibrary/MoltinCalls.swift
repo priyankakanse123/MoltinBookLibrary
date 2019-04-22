@@ -19,7 +19,7 @@ class MoltinCalls: NSObject {
     }
     
     //to get all product details
-    class func getAllProductDetails() {
+    class func getAllProductDetails(success: @escaping (PaginatedResponse<[Product]>) -> (),failure: @escaping (Error) -> ()) {
         guard let moltinObj = moltin else {
             //throw an initilalizing error
             print("error")
@@ -28,9 +28,9 @@ class MoltinCalls: NSObject {
         moltinObj.product.all { (result: Result<PaginatedResponse<[Product]>>) in
             switch result {
             case .success(let products):
-                print(products.data?[0].id)
+                success(products)
             case .failure(let error):
-                print(error)
+                failure(error)
             }
         }
     }

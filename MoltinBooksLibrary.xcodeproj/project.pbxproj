@@ -18,6 +18,8 @@
 		9905478B226D9CBB00A84BC9 /* MoltinBooksLibraryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9905478A226D9CBB00A84BC9 /* MoltinBooksLibraryUITests.swift */; };
 		9929FFB3226DA067000753D7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9929FFB2226DA067000753D7 /* HomeViewController.swift */; };
 		9929FFB5226DA183000753D7 /* MoltinCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9929FFB4226DA183000753D7 /* MoltinCalls.swift */; };
+		9929FFB7226DB4EE000753D7 /* HomeViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9929FFB6226DB4EE000753D7 /* HomeViewPresenter.swift */; };
+		9929FFB9226DB78F000753D7 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9929FFB8226DB78F000753D7 /* HomeViewModel.swift */; };
 		EF2A8726006FFE6A6B9A6DEB /* Pods_MoltinBooksLibraryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F044BD6AE4A196BD551FD71 /* Pods_MoltinBooksLibraryUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +61,8 @@
 		9905478C226D9CBB00A84BC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9929FFB2226DA067000753D7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = View/HomeViewController.swift; sourceTree = "<group>"; };
 		9929FFB4226DA183000753D7 /* MoltinCalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoltinCalls.swift; sourceTree = "<group>"; };
+		9929FFB6226DB4EE000753D7 /* HomeViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewPresenter.swift; sourceTree = "<group>"; };
+		9929FFB8226DB78F000753D7 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		C62AAC369611026945D3F93C /* Pods-MoltinBooksLibraryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoltinBooksLibraryTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoltinBooksLibraryTests/Pods-MoltinBooksLibraryTests.release.xcconfig"; sourceTree = "<group>"; };
 		CD3F42AC2D1DE26321CC336C /* Pods-MoltinBooksLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoltinBooksLibrary.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoltinBooksLibrary/Pods-MoltinBooksLibrary.release.xcconfig"; sourceTree = "<group>"; };
 		E4596574DF4D909DF52F403C /* Pods_MoltinBooksLibraryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoltinBooksLibraryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -175,6 +179,7 @@
 		9929FFAD226D9F67000753D7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9929FFB8226DB78F000753D7 /* HomeViewModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -190,6 +195,7 @@
 		9929FFAF226D9F7D000753D7 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				9929FFB6226DB4EE000753D7 /* HomeViewPresenter.swift */,
 			);
 			name = Presenter;
 			sourceTree = "<group>";
@@ -446,9 +452,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9905476D226D9CBA00A84BC9 /* ViewController.swift in Sources */,
+				9929FFB9226DB78F000753D7 /* HomeViewModel.swift in Sources */,
 				9905476B226D9CBA00A84BC9 /* AppDelegate.swift in Sources */,
 				9929FFB5226DA183000753D7 /* MoltinCalls.swift in Sources */,
 				9929FFB3226DA067000753D7 /* HomeViewController.swift in Sources */,
+				9929FFB7226DB4EE000753D7 /* HomeViewPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
