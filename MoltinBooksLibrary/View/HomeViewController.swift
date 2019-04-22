@@ -11,6 +11,7 @@ import UIKit
 class HomeViewController: UIViewController,PmoltenHomeCallback {
     
     var homePresenterObj: HomeViewPresenter?
+    var homeModelArray = Array<HomeViewModel>()
     
 
     override func viewDidLoad() {
@@ -27,9 +28,10 @@ class HomeViewController: UIViewController,PmoltenHomeCallback {
     
     
     //MARK:callback implementation
-    func success(productValue:Codable) {
-        
+    func success(productValue:Array<HomeViewModel>) {
+        self.homeModelArray = productValue
     }
+    
     func showError(message:String) {
         //show localized error
         print("error")
