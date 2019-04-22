@@ -1,0 +1,790 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B3C32679AA829974E0204A0 /* Pods_MoltinBooksLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3070E2F90A184451D825C74D /* Pods_MoltinBooksLibrary.framework */; };
+		67C0FB9C893637AE7DED02AD /* Pods_MoltinBooksLibraryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4596574DF4D909DF52F403C /* Pods_MoltinBooksLibraryTests.framework */; };
+		9905476B226D9CBA00A84BC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9905476A226D9CBA00A84BC9 /* AppDelegate.swift */; };
+		9905476D226D9CBA00A84BC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9905476C226D9CBA00A84BC9 /* ViewController.swift */; };
+		99054770226D9CBA00A84BC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9905476E226D9CBA00A84BC9 /* Main.storyboard */; };
+		99054772226D9CBB00A84BC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99054771226D9CBB00A84BC9 /* Assets.xcassets */; };
+		99054775226D9CBB00A84BC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99054773226D9CBB00A84BC9 /* LaunchScreen.storyboard */; };
+		99054780226D9CBB00A84BC9 /* MoltinBooksLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9905477F226D9CBB00A84BC9 /* MoltinBooksLibraryTests.swift */; };
+		9905478B226D9CBB00A84BC9 /* MoltinBooksLibraryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9905478A226D9CBB00A84BC9 /* MoltinBooksLibraryUITests.swift */; };
+		9929FFB3226DA067000753D7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9929FFB2226DA067000753D7 /* HomeViewController.swift */; };
+		9929FFB5226DA183000753D7 /* MoltinCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9929FFB4226DA183000753D7 /* MoltinCalls.swift */; };
+		EF2A8726006FFE6A6B9A6DEB /* Pods_MoltinBooksLibraryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F044BD6AE4A196BD551FD71 /* Pods_MoltinBooksLibraryUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9905477C226D9CBB00A84BC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9905475F226D9CBA00A84BC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99054766226D9CBA00A84BC9;
+			remoteInfo = MoltinBooksLibrary;
+		};
+		99054787226D9CBB00A84BC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9905475F226D9CBA00A84BC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99054766226D9CBA00A84BC9;
+			remoteInfo = MoltinBooksLibrary;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3070E2F90A184451D825C74D /* Pods_MoltinBooksLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoltinBooksLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F044BD6AE4A196BD551FD71 /* Pods_MoltinBooksLibraryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoltinBooksLibraryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77C49D8B49624ED7C0D153FE /* Pods-MoltinBooksLibraryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoltinBooksLibraryTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoltinBooksLibraryTests/Pods-MoltinBooksLibraryTests.debug.xcconfig"; sourceTree = "<group>"; };
+		86A7BA7D7917BA1499E366E4 /* Pods-MoltinBooksLibraryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoltinBooksLibraryUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoltinBooksLibraryUITests/Pods-MoltinBooksLibraryUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8974821D095EABCB98231775 /* Pods-MoltinBooksLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoltinBooksLibrary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoltinBooksLibrary/Pods-MoltinBooksLibrary.debug.xcconfig"; sourceTree = "<group>"; };
+		99054767226D9CBA00A84BC9 /* MoltinBooksLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoltinBooksLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9905476A226D9CBA00A84BC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9905476C226D9CBA00A84BC9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9905476F226D9CBA00A84BC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		99054771226D9CBB00A84BC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		99054774226D9CBB00A84BC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		99054776226D9CBB00A84BC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9905477B226D9CBB00A84BC9 /* MoltinBooksLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoltinBooksLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9905477F226D9CBB00A84BC9 /* MoltinBooksLibraryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoltinBooksLibraryTests.swift; sourceTree = "<group>"; };
+		99054781226D9CBB00A84BC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99054786226D9CBB00A84BC9 /* MoltinBooksLibraryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoltinBooksLibraryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9905478A226D9CBB00A84BC9 /* MoltinBooksLibraryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoltinBooksLibraryUITests.swift; sourceTree = "<group>"; };
+		9905478C226D9CBB00A84BC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9929FFB2226DA067000753D7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = View/HomeViewController.swift; sourceTree = "<group>"; };
+		9929FFB4226DA183000753D7 /* MoltinCalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoltinCalls.swift; sourceTree = "<group>"; };
+		C62AAC369611026945D3F93C /* Pods-MoltinBooksLibraryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoltinBooksLibraryTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoltinBooksLibraryTests/Pods-MoltinBooksLibraryTests.release.xcconfig"; sourceTree = "<group>"; };
+		CD3F42AC2D1DE26321CC336C /* Pods-MoltinBooksLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoltinBooksLibrary.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoltinBooksLibrary/Pods-MoltinBooksLibrary.release.xcconfig"; sourceTree = "<group>"; };
+		E4596574DF4D909DF52F403C /* Pods_MoltinBooksLibraryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoltinBooksLibraryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F13E2FB0AB5CDF7DB5C2BC23 /* Pods-MoltinBooksLibraryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoltinBooksLibraryUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoltinBooksLibraryUITests/Pods-MoltinBooksLibraryUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		99054764226D9CBA00A84BC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B3C32679AA829974E0204A0 /* Pods_MoltinBooksLibrary.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99054778226D9CBB00A84BC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67C0FB9C893637AE7DED02AD /* Pods_MoltinBooksLibraryTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99054783226D9CBB00A84BC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF2A8726006FFE6A6B9A6DEB /* Pods_MoltinBooksLibraryUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D7B3172E3EC86BB969A0A7A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8974821D095EABCB98231775 /* Pods-MoltinBooksLibrary.debug.xcconfig */,
+				CD3F42AC2D1DE26321CC336C /* Pods-MoltinBooksLibrary.release.xcconfig */,
+				77C49D8B49624ED7C0D153FE /* Pods-MoltinBooksLibraryTests.debug.xcconfig */,
+				C62AAC369611026945D3F93C /* Pods-MoltinBooksLibraryTests.release.xcconfig */,
+				86A7BA7D7917BA1499E366E4 /* Pods-MoltinBooksLibraryUITests.debug.xcconfig */,
+				F13E2FB0AB5CDF7DB5C2BC23 /* Pods-MoltinBooksLibraryUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9905475E226D9CBA00A84BC9 = {
+			isa = PBXGroup;
+			children = (
+				99054769226D9CBA00A84BC9 /* MoltinBooksLibrary */,
+				9905477E226D9CBB00A84BC9 /* MoltinBooksLibraryTests */,
+				99054789226D9CBB00A84BC9 /* MoltinBooksLibraryUITests */,
+				99054768226D9CBA00A84BC9 /* Products */,
+				3D7B3172E3EC86BB969A0A7A /* Pods */,
+				C093CFD6065552B435DB5DD6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		99054768226D9CBA00A84BC9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99054767226D9CBA00A84BC9 /* MoltinBooksLibrary.app */,
+				9905477B226D9CBB00A84BC9 /* MoltinBooksLibraryTests.xctest */,
+				99054786226D9CBB00A84BC9 /* MoltinBooksLibraryUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99054769226D9CBA00A84BC9 /* MoltinBooksLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				9929FFAF226D9F7D000753D7 /* Presenter */,
+				9929FFAE226D9F75000753D7 /* View */,
+				9929FFAD226D9F67000753D7 /* Model */,
+				9929FFAC226D9F48000753D7 /* main */,
+			);
+			path = MoltinBooksLibrary;
+			sourceTree = "<group>";
+		};
+		9905477E226D9CBB00A84BC9 /* MoltinBooksLibraryTests */ = {
+			isa = PBXGroup;
+			children = (
+				9905477F226D9CBB00A84BC9 /* MoltinBooksLibraryTests.swift */,
+				99054781226D9CBB00A84BC9 /* Info.plist */,
+			);
+			path = MoltinBooksLibraryTests;
+			sourceTree = "<group>";
+		};
+		99054789226D9CBB00A84BC9 /* MoltinBooksLibraryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9905478A226D9CBB00A84BC9 /* MoltinBooksLibraryUITests.swift */,
+				9905478C226D9CBB00A84BC9 /* Info.plist */,
+			);
+			path = MoltinBooksLibraryUITests;
+			sourceTree = "<group>";
+		};
+		9929FFAC226D9F48000753D7 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				9929FFB1226D9FD1000753D7 /* NetworkCalls */,
+				9929FFB0226D9FB0000753D7 /* Utility */,
+				9905476A226D9CBA00A84BC9 /* AppDelegate.swift */,
+				9905476C226D9CBA00A84BC9 /* ViewController.swift */,
+				9905476E226D9CBA00A84BC9 /* Main.storyboard */,
+				99054771226D9CBB00A84BC9 /* Assets.xcassets */,
+				99054773226D9CBB00A84BC9 /* LaunchScreen.storyboard */,
+				99054776226D9CBB00A84BC9 /* Info.plist */,
+			);
+			name = main;
+			sourceTree = "<group>";
+		};
+		9929FFAD226D9F67000753D7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9929FFAE226D9F75000753D7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9929FFB2226DA067000753D7 /* HomeViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9929FFAF226D9F7D000753D7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		9929FFB0226D9FB0000753D7 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		9929FFB1226D9FD1000753D7 /* NetworkCalls */ = {
+			isa = PBXGroup;
+			children = (
+				9929FFB4226DA183000753D7 /* MoltinCalls.swift */,
+			);
+			name = NetworkCalls;
+			sourceTree = "<group>";
+		};
+		C093CFD6065552B435DB5DD6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3070E2F90A184451D825C74D /* Pods_MoltinBooksLibrary.framework */,
+				E4596574DF4D909DF52F403C /* Pods_MoltinBooksLibraryTests.framework */,
+				3F044BD6AE4A196BD551FD71 /* Pods_MoltinBooksLibraryUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		99054766226D9CBA00A84BC9 /* MoltinBooksLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9905478F226D9CBB00A84BC9 /* Build configuration list for PBXNativeTarget "MoltinBooksLibrary" */;
+			buildPhases = (
+				267B3FB4C3DC37E50EE2D440 /* [CP] Check Pods Manifest.lock */,
+				99054763226D9CBA00A84BC9 /* Sources */,
+				99054764226D9CBA00A84BC9 /* Frameworks */,
+				99054765226D9CBA00A84BC9 /* Resources */,
+				1CD8ECF735C8F95861919E1B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoltinBooksLibrary;
+			productName = MoltinBooksLibrary;
+			productReference = 99054767226D9CBA00A84BC9 /* MoltinBooksLibrary.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9905477A226D9CBB00A84BC9 /* MoltinBooksLibraryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99054792226D9CBB00A84BC9 /* Build configuration list for PBXNativeTarget "MoltinBooksLibraryTests" */;
+			buildPhases = (
+				BF3DEBA19C2B002AF1389571 /* [CP] Check Pods Manifest.lock */,
+				99054777226D9CBB00A84BC9 /* Sources */,
+				99054778226D9CBB00A84BC9 /* Frameworks */,
+				99054779226D9CBB00A84BC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9905477D226D9CBB00A84BC9 /* PBXTargetDependency */,
+			);
+			name = MoltinBooksLibraryTests;
+			productName = MoltinBooksLibraryTests;
+			productReference = 9905477B226D9CBB00A84BC9 /* MoltinBooksLibraryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		99054785226D9CBB00A84BC9 /* MoltinBooksLibraryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99054795226D9CBB00A84BC9 /* Build configuration list for PBXNativeTarget "MoltinBooksLibraryUITests" */;
+			buildPhases = (
+				ACB084430D36C3A72EAC8628 /* [CP] Check Pods Manifest.lock */,
+				99054782226D9CBB00A84BC9 /* Sources */,
+				99054783226D9CBB00A84BC9 /* Frameworks */,
+				99054784226D9CBB00A84BC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99054788226D9CBB00A84BC9 /* PBXTargetDependency */,
+			);
+			name = MoltinBooksLibraryUITests;
+			productName = MoltinBooksLibraryUITests;
+			productReference = 99054786226D9CBB00A84BC9 /* MoltinBooksLibraryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9905475F226D9CBA00A84BC9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Priyanka;
+				TargetAttributes = {
+					99054766226D9CBA00A84BC9 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					9905477A226D9CBB00A84BC9 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 99054766226D9CBA00A84BC9;
+					};
+					99054785226D9CBB00A84BC9 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 99054766226D9CBA00A84BC9;
+					};
+				};
+			};
+			buildConfigurationList = 99054762226D9CBA00A84BC9 /* Build configuration list for PBXProject "MoltinBooksLibrary" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9905475E226D9CBA00A84BC9;
+			productRefGroup = 99054768226D9CBA00A84BC9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				99054766226D9CBA00A84BC9 /* MoltinBooksLibrary */,
+				9905477A226D9CBB00A84BC9 /* MoltinBooksLibraryTests */,
+				99054785226D9CBB00A84BC9 /* MoltinBooksLibraryUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		99054765226D9CBA00A84BC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99054775226D9CBB00A84BC9 /* LaunchScreen.storyboard in Resources */,
+				99054772226D9CBB00A84BC9 /* Assets.xcassets in Resources */,
+				99054770226D9CBA00A84BC9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99054779226D9CBB00A84BC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99054784226D9CBB00A84BC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1CD8ECF735C8F95861919E1B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MoltinBooksLibrary/Pods-MoltinBooksLibrary-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Moltin/moltin.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/moltin.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoltinBooksLibrary/Pods-MoltinBooksLibrary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		267B3FB4C3DC37E50EE2D440 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoltinBooksLibrary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACB084430D36C3A72EAC8628 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoltinBooksLibraryUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF3DEBA19C2B002AF1389571 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoltinBooksLibraryTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		99054763226D9CBA00A84BC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9905476D226D9CBA00A84BC9 /* ViewController.swift in Sources */,
+				9905476B226D9CBA00A84BC9 /* AppDelegate.swift in Sources */,
+				9929FFB5226DA183000753D7 /* MoltinCalls.swift in Sources */,
+				9929FFB3226DA067000753D7 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99054777226D9CBB00A84BC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99054780226D9CBB00A84BC9 /* MoltinBooksLibraryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99054782226D9CBB00A84BC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9905478B226D9CBB00A84BC9 /* MoltinBooksLibraryUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9905477D226D9CBB00A84BC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99054766226D9CBA00A84BC9 /* MoltinBooksLibrary */;
+			targetProxy = 9905477C226D9CBB00A84BC9 /* PBXContainerItemProxy */;
+		};
+		99054788226D9CBB00A84BC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99054766226D9CBA00A84BC9 /* MoltinBooksLibrary */;
+			targetProxy = 99054787226D9CBB00A84BC9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9905476E226D9CBA00A84BC9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9905476F226D9CBA00A84BC9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		99054773226D9CBB00A84BC9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99054774226D9CBB00A84BC9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9905478D226D9CBB00A84BC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9905478E226D9CBB00A84BC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		99054790226D9CBB00A84BC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8974821D095EABCB98231775 /* Pods-MoltinBooksLibrary.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9K42YM4LDF;
+				INFOPLIST_FILE = MoltinBooksLibrary/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abc.MoltinBooksLibrary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		99054791226D9CBB00A84BC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD3F42AC2D1DE26321CC336C /* Pods-MoltinBooksLibrary.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9K42YM4LDF;
+				INFOPLIST_FILE = MoltinBooksLibrary/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abc.MoltinBooksLibrary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		99054793226D9CBB00A84BC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77C49D8B49624ED7C0D153FE /* Pods-MoltinBooksLibraryTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9K42YM4LDF;
+				INFOPLIST_FILE = MoltinBooksLibraryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abc.MoltinBooksLibraryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoltinBooksLibrary.app/MoltinBooksLibrary";
+			};
+			name = Debug;
+		};
+		99054794226D9CBB00A84BC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C62AAC369611026945D3F93C /* Pods-MoltinBooksLibraryTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9K42YM4LDF;
+				INFOPLIST_FILE = MoltinBooksLibraryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abc.MoltinBooksLibraryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoltinBooksLibrary.app/MoltinBooksLibrary";
+			};
+			name = Release;
+		};
+		99054796226D9CBB00A84BC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86A7BA7D7917BA1499E366E4 /* Pods-MoltinBooksLibraryUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9K42YM4LDF;
+				INFOPLIST_FILE = MoltinBooksLibraryUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abc.MoltinBooksLibraryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MoltinBooksLibrary;
+			};
+			name = Debug;
+		};
+		99054797226D9CBB00A84BC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F13E2FB0AB5CDF7DB5C2BC23 /* Pods-MoltinBooksLibraryUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9K42YM4LDF;
+				INFOPLIST_FILE = MoltinBooksLibraryUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abc.MoltinBooksLibraryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MoltinBooksLibrary;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		99054762226D9CBA00A84BC9 /* Build configuration list for PBXProject "MoltinBooksLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9905478D226D9CBB00A84BC9 /* Debug */,
+				9905478E226D9CBB00A84BC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9905478F226D9CBB00A84BC9 /* Build configuration list for PBXNativeTarget "MoltinBooksLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99054790226D9CBB00A84BC9 /* Debug */,
+				99054791226D9CBB00A84BC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99054792226D9CBB00A84BC9 /* Build configuration list for PBXNativeTarget "MoltinBooksLibraryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99054793226D9CBB00A84BC9 /* Debug */,
+				99054794226D9CBB00A84BC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99054795226D9CBB00A84BC9 /* Build configuration list for PBXNativeTarget "MoltinBooksLibraryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99054796226D9CBB00A84BC9 /* Debug */,
+				99054797226D9CBB00A84BC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9905475F226D9CBA00A84BC9 /* Project object */;
+}
