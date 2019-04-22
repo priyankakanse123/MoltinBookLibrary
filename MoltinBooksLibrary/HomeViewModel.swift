@@ -17,10 +17,13 @@ class HomeViewModel: NSObject {
     var descriptionOfProduct: String?
     var stock: String?
     var status: String?
+    var isSelected: Bool = false
+    
+    
     init(productValue:Product) {
         
         self.title = productValue.name
-        self.price = "\(String(describing: productValue.price?[0].amount) )  \(String(describing: productValue.price?[0].currency))"
+        self.price = "\(String(describing: productValue.price![0].amount))  \(String(describing: productValue.price![0].currency))"
         self.descriptionOfProduct = productValue.description
         self.status = productValue.status
         
