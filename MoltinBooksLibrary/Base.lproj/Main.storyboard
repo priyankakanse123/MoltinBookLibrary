@@ -88,7 +88,6 @@
                                 <state key="normal" title="Checkout"/>
                                 <connections>
                                     <action selector="checkoutButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="44v-B7-i9D"/>
-                                    <segue destination="XLm-6E-0wb" kind="show" identifier="showCart" id="cA5-JJ-CSc"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your product" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jtA-8w-xqq">
@@ -117,6 +116,7 @@
                     <navigationItem key="navigationItem" id="hJg-gZ-Jg6"/>
                     <connections>
                         <outlet property="productTableView" destination="90c-e0-Zwh" id="QNx-Nr-Sga"/>
+                        <segue destination="XLm-6E-0wb" kind="show" identifier="showCart" id="ixL-O0-JtI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

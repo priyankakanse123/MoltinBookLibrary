@@ -18,6 +18,7 @@ class HomeViewModel: NSObject {
     var stock: String?
     var status: String?
     var isSelected: Bool = false
+    var id: String?
     
     
     init(productValue:Product) {
@@ -26,6 +27,7 @@ class HomeViewModel: NSObject {
         self.price = "\(String(describing: productValue.price![0].amount))  \(String(describing: productValue.price![0].currency))"
         self.descriptionOfProduct = productValue.description
         self.status = productValue.status
+        self.id = productValue.id
         
     }
     

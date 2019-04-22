@@ -44,6 +44,11 @@ class HomeViewController: UIViewController,PmoltenHomeCallback,UITableViewDataSo
         //show localized error
         print("error")
     }
+    func performCheckoutAction() {
+        DispatchQueue.main.async {
+            self.performSegue(withIdentifier: "showCart", sender: self)
+        }
+    }
     
     //MARK:-UITableview data source
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -71,23 +76,16 @@ class HomeViewController: UIViewController,PmoltenHomeCallback,UITableViewDataSo
         
     }
     
-
-    
     //MARK:UITableview delegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         var productObj = self.homeModelArray[indexPath.row]
         productObj.isSelected = !productObj.isSelected
         self.homeModelArray[indexPath.row] = productObj
-        
         self.productTableView.reloadData()
-        
     }
     
     @IBAction func checkoutButtonClicked(_ sender: Any) {
-        
-        
-        
-        self.performSegue(withIdentifier: "showCart", sender: self)
+        homePresenterObj?.addCartItems(homeModelArray: self.homeModelArray)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
